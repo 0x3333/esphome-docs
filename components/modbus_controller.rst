@@ -768,7 +768,6 @@ you can get the function code in ``function_code`` and the register address in `
         on_online:
           then:
             - logger.log: "Controller back online!"
-            - script.execute: configure_controller
 
 .. _modbus_controller-on_offline:
 
@@ -786,7 +785,6 @@ you can get the function code in ``function_code`` and the register address in `
         on_offline:
           then:
             - logger.log: "Controller goes offline!"
-            - script.execute: notify_admin
 
 See Also
 --------
